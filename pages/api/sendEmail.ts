@@ -9,8 +9,8 @@ export default async function SendEmail(req: NextApiRequest, res: NextApiRespons
   const referer = req.headers.referer;
 
   const content = {
-    to: ['contact@bstefanski.com'],
-    from: 'contact@bstefanski.com',
+    to: ['queenscriptqueen@gmail.com'],
+    from: 'queenscriptqueen@gmail.com',
     subject: subject,
     text: description,
     html: `<div>

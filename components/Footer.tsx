@@ -50,20 +50,20 @@ export default function Footer() {
   return (
     <FooterWrapper>
       <Container>
-        <ListContainer>
+        {/* <ListContainer>
           {footerItems.map((singleItem) => (
             <FooterList key={singleItem.title} {...singleItem} />
           ))}
-        </ListContainer>
+        </ListContainer> */}
         <BottomBar>
           <ShareBar>
-            <NextLink href="https://www.twitter.com/my-saas-startup" passHref>
+            {/* <NextLink href="https://www.twitter.com/my-saas-startup" passHref>
               <a>
                 <TwitterIcon size={50} round={true} />
               </a>
-            </NextLink>
+            </NextLink> */}
 
-            <NextLink href="https://www.facebook.com/my-saas-startup" passHref>
+            {/* <NextLink href="https://www.facebook.com/my-saas-startup" passHref>
               <a>
                 <FacebookIcon size={50} round={true} />
               </a>
@@ -73,9 +73,9 @@ export default function Footer() {
               <a>
                 <LinkedinIcon size={50} round={true} />
               </a>
-            </NextLink>
+            </NextLink> */}
           </ShareBar>
-          <Copyright>&copy; Copyright 2021 My Saas Startup</Copyright>
+          <Copyright>&copy; Copyright 2023 New Life SCS</Copyright>
         </BottomBar>
       </Container>
     </FooterWrapper>

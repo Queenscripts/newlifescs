@@ -11438,7 +11438,7 @@ through@^2.3.6:
   resolved "https://registry.yarnpkg.com/through/-/through-2.3.8.tgz#0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5"
   integrity sha512-w89qg7PI8wAdvX60bMDP+bFoD5Dvhm9oLheFp5O4a2QF0cSBGsBX4qZmadPMvVqlLJBBci+WqGGOAPvcDeNSVg==
 
-tinacms@^1.5.8:
+tinacms@^1.5.17:
   version "1.5.17"
   resolved "https://registry.yarnpkg.com/tinacms/-/tinacms-1.5.17.tgz#cddb90e29714f80b3d6b15587ba07167f6a29ce0"
   integrity sha512-9eK44wxAW56YNZ8fst0d044vdC3hm61w9FPZeouKLL5gom2J7rCRYWgITmOMuqWNHzUr9adhkTN94EzE5VOMyg==

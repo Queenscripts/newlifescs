@@ -137,7 +137,7 @@ export async function getStaticProps({ params }: GetStaticPropsContext<{ slug: s
   const data = (await staticRequest({
     query: query,
     variables: variables,
-  })) as { getPostsDocument: PostsDocument };
+  })) as { getPostsDocument: typeof PostsDocument };
 
   return {
     props: { slug, variables, query, data },

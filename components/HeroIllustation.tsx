@@ -1,7 +1,8 @@
 
 export default function HeroIllustration() {
   return (
-    <img style={{borderRadius:"100px 50px"}} alt="support senior care solutions" src="./care.jpg" />
+   <div  className="img-gradient"><img  alt="support senior care solutions" src="./care.jpg" /></div>
+    
     // <svg
     //   id="70093593-85a2-447b-b81e-208691c845a3"
     //   data-name="Layer 1"

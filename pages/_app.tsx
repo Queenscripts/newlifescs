@@ -18,6 +18,7 @@ import NewsletterModal from 'components/NewsletterModal';
 import WaveCta from 'components/WaveCta';
 import { NewsletterModalContextProvider, useNewsletterModalContext } from 'contexts/newsletter-modal.context';
 import { NavItems } from 'types';
+import "./styles/landingpage.css"
 
 const navItems: NavItems = [
   // { title: 'Services', href: '/features' },

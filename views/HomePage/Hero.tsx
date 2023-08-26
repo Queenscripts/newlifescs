@@ -23,7 +23,7 @@ export default function Hero() {
           <Button onClick={() => setIsModalOpened(true)}>
             Schedule a Free Consultation <span>&rarr;</span>
           </Button>
-          <NextLink href="#whitepaper" passHref>
+          <NextLink href="#services" passHref>
             <Button transparent>
               Services <span>&rarr;</span>
             </Button>

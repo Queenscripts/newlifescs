@@ -31,7 +31,11 @@ export default function WaveCta() {
                 Features <span>&rarr;</span>
               </OutlinedButton>
             </NextLink> */}
+            <Button onClick={() => setIsModalOpened(true)}>
+            Schedule a Free Consultation <span>&rarr;</span>
+          </Button>
           </CustomButtonGroup>
+            
         </Container>
       </CtaWrapper>
     </>

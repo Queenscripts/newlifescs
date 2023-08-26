@@ -12,7 +12,6 @@ import Hero from 'views/HomePage/Hero';
 import Partners from 'views/HomePage/Partners';
 import ScrollableBlogPosts from 'views/HomePage/ScrollableBlogPosts';
 import Testimonials from 'views/HomePage/Testimonials';
-
 export default function Homepage({ posts }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <>
@@ -27,7 +26,7 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
         <WhiteBackgroundContainer>
           <Hero />
           {/* <Partners /> */}
-          <BasicSection imageUrl="/seniorwalk.png" title="Let New Life Senior Care Solutions Help You With Your Needs." overTitle="We'll Help You With Your New Life">
+          <BasicSection imageUrl="/seniorwalk.jpg" title="Let New Life Senior Care Solutions Help You With Your Needs." overTitle="We'll Help You With Your New Life">
             <p>
              We have a simple process for a custom list of care options if you&apos;re looking for senior care options.
              {" "}

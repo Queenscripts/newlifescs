@@ -12,24 +12,30 @@ const TABS = [
   {
     title: 'We are led by a licensed real estate broker for 32 years',
     description:
-      '<p> Our experienced senior care advocates can help guide you and find the right place for your loved one. We provide exceptional </p>',
-    imageUrl: '/demo-illustration-3.png',
+      '<p> Our experienced senior care advocates can help guide you and find the right place for your loved one. We provide exceptional support to your loved one. </p>',
+    imageUrl: '/realestate.jpg',
     baseColor: '249,82,120',
     secondColor: '221,9,57',
   },
   {
-    title: 'Another amazing feature',
-    description:
-      '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem ipsam ratione dicta quis cupiditate consequuntur laborum ducimus iusto velit.</p>',
-    imageUrl: '/demo-illustration-4.png',
+    title: 'We consult with families to identify their loved ones specific needs',
+    description:'<p>We identify and personally select placement choices. We assist in coordinating services. With our knowledge of the greater Bay Area, and the use of our propietary matching software, we work with you to find the best place and care for your loved ones.</p>',
+    imageUrl: '/stroll.jpg',
     baseColor: '57,148,224',
     secondColor: '99,172,232',
   },
   {
-    title: 'And yet... another truly fascinating feature',
+    title: 'We arrange and accompany the family on all facility tours',
+    description:'<p>We advocate for families and act as liaison with the facility. We negotiate facility prices. We keep insurance, and budget as a priority in our matching process, to find the best care that is also economically sound. </p>',
+    imageUrl: '/bench.jpg',
+    baseColor: '57,148,224',
+    secondColor: '99,172,232',
+  },
+  {
+    title: 'We provide Customized Care Options',
     description:
-      '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem ipsam ratione dicta quis cupiditate consequuntur laborum ducimus iusto velit.</p>',
-    imageUrl: '/demo-illustration-5.png',
+      '<p>Assisted living is a type of long-term residential care for seniors who need some help with daily tasks like laundry, transportation, and medication management. Most assisted living facilities offer support with daily activities, as well opportunities for social and recreational activities. </p>',
+    imageUrl: '/window.jpg',
     baseColor: '88,193,132',
     secondColor: '124,207,158',
   },

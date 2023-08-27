@@ -84,10 +84,20 @@ export async function getStaticPaths() {
     query: `
       query getAllPostsSlugs{
         getPostsList{
-          edges{
-            node{
-              sys{
+          totalCount
+          edges {
+            node {
+              id
+              sys {
+                filename
                 basename
+                breadcrumbs
+                path
+                relativePath
+                extension
+              }
+              data {
+                ...PostsParts
               }
             }
           }

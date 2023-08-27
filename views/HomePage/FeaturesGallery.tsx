@@ -14,8 +14,10 @@ const TABS = [
     description:
       '<p> Our experienced senior care advocates can help guide you and find the right place for your loved one. We provide exceptional support to your loved one. </p>',
     imageUrl: '/realestate.jpg',
-    baseColor: '249,82,120',
-    secondColor: '221,9,57',
+    // baseColor: '249,82,120',
+    // secondColor: '221,9,57',
+    baseColor: '57,148,224',
+    secondColor: '99,172,232',
   },
   {
     title: 'We consult with families to identify their loved ones specific needs',
@@ -36,8 +38,10 @@ const TABS = [
     description:
       '<p>Assisted living is a type of long-term residential care for seniors who need some help with daily tasks like laundry, transportation, and medication management. Most assisted living facilities offer support with daily activities, as well opportunities for social and recreational activities. </p>',
     imageUrl: '/window.jpg',
-    baseColor: '88,193,132',
-    secondColor: '124,207,158',
+    // baseColor: '88,193,132',
+    // secondColor: '124,207,158',
+    baseColor: '57,148,224',
+    secondColor: '99,172,232',
   },
 ];
 

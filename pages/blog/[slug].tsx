@@ -50,19 +50,19 @@ export default function SingleArticlePage(props: InferGetStaticPropsType<typeof 
     }
   }, []);
 
-  const { slug, data } = props;
-  const content = data.getPostsDocument.data.body;
+  // const { slug, data } = props;
+  // const content = data.getPostsDocument.data.body;
 
-  if (!data) {
-    return null;
-  }
-  const { title, description, date, tags, imageUrl } = data.getPostsDocument.data as NonNullableChildrenDeep<Posts>;
-  const meta = { title, description, date: date, tags, imageUrl, author: '' };
-  const formattedDate = formatDate(new Date(date));
-  const absoluteImageUrl = imageUrl.replace(/\/+/, '/');
+  // if (!data) {
+  //   return null;
+  // }
+  // const { title, description, date, tags, imageUrl } = data.getPostsDocument.data as NonNullableChildrenDeep<Posts>;
+  // const meta = { title, description, date: date, tags, imageUrl, author: '' };
+  // const formattedDate = formatDate(new Date(date));
+  // const absoluteImageUrl = imageUrl.replace(/\/+/, '/');
   return (
     <>
-      <Head>
+      {/* <Head>
         <noscript>
           <link rel="stylesheet" href="/prism-theme.css" />
         </noscript>
@@ -74,52 +74,35 @@ export default function SingleArticlePage(props: InferGetStaticPropsType<typeof 
         <ShareWidget title={title} slug={slug} />
         <Header title={title} formattedDate={formattedDate} imageUrl={absoluteImageUrl} readTime={readTime} />
         <MDXRichText content={content} />
-      </CustomContainer>
+      </CustomContainer> */}
     </>
   );
 }
 
 export async function getStaticPaths() {
-  const postsListData = await staticRequest({
-    query: `
-      query getAllPostsSlugs{
-        getPostsList{
-          totalCount
-          edges {
-            node {
-              id
-              sys {
-                filename
-                basename
-                breadcrumbs
-                path
-                relativePath
-                extension
-              }
-              data {
-                ...PostsParts
-              }
-            }
-          }
-        }
-      }
-    `,
-    variables: {},
-  });
+  // const postsListData = await staticRequest({
+  //   query: `
+  //     query getAllPostsSlugs{
+     
+  //     }
+  //   `,
+  //   variables: {},
+  // });
 
-  if (!postsListData) {
-    return {
-      paths: [],
-      fallback: false,
-    };
-  }
+  // if (!postsListData) {
+  //   return {
+  //     paths: [],
+  //     fallback: false,
+  //   };
+  // }
 
   // type NullAwarePostsList = { getPostsList: NonNullableChildrenDeep<Query['getPostsList']> };
   return {
-    paths: (postsListData as any).getPostsList.edges.map((edge: { node: { sys: { basename: string; }; }; }) => ({
-      params: { slug: normalizePostName(edge.node.sys.basename) },
-    })),
-    fallback: false,
+    // paths: (postsListData as any).getPostsList.edges.map((edge: { node: { sys: { basename: string; }; }; }) => ({
+    //   params: { slug: normalizePostName(edge.node.sys.basename) },
+    // })),
+    paths:[],
+    fallback: true,
   };
 }
 
@@ -145,14 +128,14 @@ export async function getStaticProps({ params }: GetStaticPropsContext<{ slug: s
     }
   `;
 
-  const data = (await staticRequest({
-    query: query,
-    variables: variables,
-  })) as { getPostsDocument: typeof PostsDocument };
+  // const data = (await staticRequest({
+  //   query: query,
+  //   variables: variables,
+  // })) as { getPostsDocument: typeof PostsDocument };
 
-  return {
-    props: { slug, variables, query, data },
-  };
+  // return {
+  //   props: { slug, variables, query, data },
+  // };
 }
 
 const CustomContainer = styled(Container)`

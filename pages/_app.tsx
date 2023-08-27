@@ -36,7 +36,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         {/* <link rel="icon" type="image/png" href="/favicon.png" /> */}
-        <link rel="icon" type="image/png" href="/icon.png" sizes="16x16"/>
+        <link rel="icon" type="image/png" href="./icon.png" sizes="16x16"/>
         {/* <link rel="alternate" type="application/rss+xml" href={EnvVars.URL + 'rss'} title="RSS 2.0" /> */}
         {/* <script
           dangerouslySetInnerHTML={{

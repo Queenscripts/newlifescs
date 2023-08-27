@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import Button from 'components/Button';
 import ButtonGroup from 'components/ButtonGroup';
 import Container from 'components/Container';
+import ContactPage from "../views/ContactPage/FormSection"
+import InformationSection from "../views/ContactPage/InformationSection"
 import SectionTitle from 'components/SectionTitle';
 import { useNewsletterModalContext } from 'contexts/newsletter-modal.context';
 import { media } from 'utils/media';
@@ -32,11 +34,11 @@ export default function WaveCta() {
                 Features <span>&rarr;</span>
               </OutlinedButton>
             </NextLink> */}
-            <Button onClick={() => setIsModalOpened(true)}>
+            {/* <Button onClick={() => setIsModalOpened(true)}>
             Schedule a Free Consultation <span>&rarr;</span>
-          </Button>
+          </Button> */}
           </CustomButtonGroup>
-            
+          <ContactPage/>
         </Container>
       </CtaWrapper>
     </>

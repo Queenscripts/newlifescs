@@ -23,8 +23,11 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
         />
       </Head>
       <HomepageWrapper>
+        <TopBackgroundContainer>
+        <Hero />
+
+        </TopBackgroundContainer>
         <WhiteBackgroundContainer>
-          <Hero />
           {/* <Partners /> */}
           <BasicSection imageUrl="/seniorwalk.jpg" title="Let New Life Senior Care Solutions Help You With Your Needs." overTitle="We'll Help You With Your New Life">
             <p>
@@ -71,8 +74,14 @@ const HomepageWrapper = styled.div`
   }
 `;
 
+const TopBackgroundContainer = styled.div`
+background: #8199d626;
+
+`;
+
 const DarkerBackgroundContainer = styled.div`
   background: rgb(var(--background));
+  padding-top: 3vh;
 
   & > *:not(:first-child) {
     margin-top: 15rem;
@@ -81,6 +90,7 @@ const DarkerBackgroundContainer = styled.div`
 
 const WhiteBackgroundContainer = styled.div`
   background: rgb(var(--secondBackground));
+  padding-top: 2vh;
 
   & > :last-child {
     padding-bottom: 15rem;

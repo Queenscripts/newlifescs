@@ -10,7 +10,7 @@ import { media } from 'utils/media';
 
 const TABS = [
   {
-    title: 'We are led by a licensed real estate broker for 32 years',
+    title: 'We are led by a licensed real estate broker of 32 years',
     description:
       '<p> Our experienced senior care advocates can help guide you and find the right place for your loved one. We provide exceptional support to your loved one. </p>',
     imageUrl: '/realestate.jpg',

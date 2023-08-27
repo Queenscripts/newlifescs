@@ -82,6 +82,7 @@ export default function SingleArticlePage(props: InferGetStaticPropsType<typeof 
 export async function getStaticPaths() {
   const postsListData = await staticRequest({
     query: `
+      query getAllPostsSlugs{
         getPostsList{
           edges{
             node{
@@ -90,6 +91,7 @@ export async function getStaticPaths() {
               }
             }
           }
+        }
       }
     `,
     variables: {},

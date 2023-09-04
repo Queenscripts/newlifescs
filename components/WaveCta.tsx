@@ -24,7 +24,7 @@ export default function WaveCta() {
       </svg>
       <CtaWrapper>
         <Container>
-          <Title>Best of all, our services are always <b>free</b> for you and your family! </Title>
+          <Title>We advocate your every need <b>at no cost to you</b> for you and your family! </Title>
           <CustomButtonGroup>
             {/* <Button onClick={() => setIsModalOpened(true)}>
               Start today <span>&rarr;</span>

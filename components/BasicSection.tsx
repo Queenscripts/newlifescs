@@ -20,7 +20,7 @@ export default function BasicSection({ imageUrl, title, overTitle, reversed, chi
         <NextImage src={imageUrl} alt={title} layout="fill" objectFit="cover" />
       </ImageContainer>
       <ContentContainer>
-        <CustomOverTitle>{overTitle}</CustomOverTitle>
+        {/* <CustomOverTitle>{overTitle}</CustomOverTitle> */}
         <Title>{title}</Title>
         <RichText>{children}</RichText>
       </ContentContainer>

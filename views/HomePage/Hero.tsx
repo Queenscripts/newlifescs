@@ -14,7 +14,7 @@ export default function Hero() {
   return (
     <HeroWrapper>
       <Contents>
-        <CustomOverTitle>Our mission</CustomOverTitle>
+        {/* <CustomOverTitle>Our mission</CustomOverTitle> */}
         <Heading>Let our team of experts find the right senior care for you.</Heading>
         <Description>
         Best of all, our services are always <b>free</b> for you and your family!

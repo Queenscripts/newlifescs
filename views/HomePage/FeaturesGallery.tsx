@@ -84,7 +84,7 @@ export default function FeaturesGallery() {
   }
 
   return (
-    <FeaturesGalleryWrapper style={{marginTop: "40px;"}}>
+    <FeaturesGalleryWrapper id="services" style={{marginTop: "40px;"}}>
       <Content>
         {/* <OverTitle>features</OverTitle> */}
         <SectionTitle>Are you challenged with how to care <br/> for your loved one?</SectionTitle>
